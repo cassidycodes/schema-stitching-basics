@@ -23,7 +23,7 @@ const buildExec = (port: number, serviceName: string) => {
 export async function makeGatewaySchema() {
   const bookExec = buildExec(4001, "book-service");
   const authorExec = buildExec(4002, "author-service");
-  // const pusblisherExec = buildExec(4003, "publisher-service");
+  // const publisherExec = buildExec(4003, "publisher-service");
 
   const schema = stitchSchemas({
     subschemas: [

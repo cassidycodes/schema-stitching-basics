@@ -130,10 +130,10 @@ arguments to the author service sub-subschema config in `make-gateway-schema.ts`
     Author: {
       // name of the field to query for books
       fieldName: "authorById",
-      // name of the key field on the Book returned from author-service
+      // name of the key field on the Book returned from author-service >SIDE NOTE: could these parameter descriptions be clearer? found even the source documentation to be on the difficult end to understand 
       selectionSet: "{ id }",
       // Format the key field into query arguments
-      // `args` is used for single record fetching
+      // `args` is used for single record fetching 
       args: ({ id }) => ({ id })
     }
   }
